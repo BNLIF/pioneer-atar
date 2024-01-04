@@ -20,7 +20,7 @@ def check_eigen(ctx, mandatory=True):
         return
     else:
         ctx.start_msg('Checking for Eigen in %s' % instdir)
-        ctx.env.INCLUDES_EIGEN = [ osp.join(instdir,'include/eigen3') ]
+        ctx.env.INCLUDES_EIGEN = [ osp.join(instdir,'include') ]
 
     ctx.check(header_name="Eigen/Dense", use='EIGEN', mandatory=mandatory)
     if len(ctx.env.INCLUDES_EIGEN):

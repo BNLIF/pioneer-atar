@@ -14,7 +14,7 @@ def options(opt):
 
 
 @conf
-def check_python(ctx, mandatory=True):
+def check_python(ctx, mandatory=False):
     instdir = ctx.options.with_python
 
     if instdir is None or instdir.lower() in ['yes', 'true', 'on']:

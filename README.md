@@ -10,7 +10,6 @@ Externals set as ups product style:
 --boost-libs="$BOOST_LIB" \
 --boost-mt \
 --with-eigen="$EIGEN_DIR" \
---with-fftw="$FFTW_FQ_DIR" \
 --with-root="$ROOTSYS" \
 --prefix=../opt
 ```
@@ -22,7 +21,6 @@ Externals set as Xin's style (not tested):
 --boost-libs="$WC_EXTERNALS/lib" \
 --boost-mt \
 --with-eigen="$WC_EXTERNALS" \
---with-fftw="$WC_EXTERNALS" \
 --with-root="$WC_EXTERNALS" \
 --prefix=../opt
 ```
